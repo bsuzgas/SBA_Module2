@@ -1,0 +1,19 @@
+name: Engineering Check
+
+on: [push] # The trigger: run every time code is pushed
+
+jobs:
+  run-validation:
+    runs-on: ubuntu-latest # Requesting a fresh Linux VM from GitHub
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4 # Step 1: Copy code to the VM
+
+      - name: Setup Python
+        uses: actions/setup-python@v4 # Step 2: Install Python environment
+        with:
+          python-version: '3.12'
+
+      - name: Run Tests
+        run: python test_logic.py # Step 3: Execute the test script
