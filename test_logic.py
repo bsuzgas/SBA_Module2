@@ -1,5 +1,5 @@
 import unittest
-from app import calculate_total_cost
+from app import calculate_total_cost, calculate_brake_pad_cost
 
 class TestMaintenance(unittest.TestCase):
     def test_calculate_cost(self):
@@ -8,3 +8,8 @@ class TestMaintenance(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def test_brake_pads(self):
+    # Verification for brake pads
+    self.assertEqual(calculate_brake_pad_cost(300, 250), 550)
