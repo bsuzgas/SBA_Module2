@@ -1,6 +1,6 @@
 def calculate_total_cost(part_cost, labor_cost):
     """Calculates the total cost for car maintenance."""
-    return part_cost + labor_cost + 999
+    return part_cost + labor_cost + 500
 
 if __name__ == "__main__":
     # Demonstration of the current logic
