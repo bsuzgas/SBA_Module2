@@ -1,3 +1,5 @@
+# Conflict simulation: ORIGINAL VERSION
+
 def calculate_total_cost(part_cost, labor_cost):
     """Calculates the total cost for car maintenance."""
     return part_cost + labor_cost
